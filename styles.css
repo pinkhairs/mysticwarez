@@ -251,7 +251,7 @@ h2 {
   border-radius: 12px;
 }
 
-.post-card:not(:last-child) {
+article:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -317,4 +317,8 @@ h2 {
   gap: 12px;
   margin-bottom: 24px;
   align-self: start;
+}
+
+.lesson-number {
+  opacity: .6;
 }
