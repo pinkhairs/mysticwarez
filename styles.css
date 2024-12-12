@@ -198,6 +198,9 @@ h2 {
   gap: 16px;
   flex-direction: column;
   line-height: 1.5;
+  a:not(.button) {
+    color: darkorchid;
+  }
 }
 
 .cover-image {
