@@ -8,17 +8,23 @@
 </head>
 <body>
   <div class="page">
-    <header class="site-header"></header>
+    <header class="site-header back-header">
+      <a onclick="history.back(); return false;" id="back-link" href="/">
+        <span class="back-button">&#x25c0;</span> <div class="logo"></div>
+      </a>
+    </header>
     <main class="site-main">
       <article class="post-card post-preview">
         <div class="post-content">
           <img src="/posts/welcome/images/cover.jpg" alt="How to join Mysticwarez" class="cover-image">
           <h2>📌 Welcome to the digital coven for tech witches - Start here</h2>
-          <p>Blah blah blah.</p>
+          <p>This website is in-progress.</p>
         </div>
       </article>
+      <div id="utterances-container"></div>
     </main>
   </div>
-  <script defer src="/scripts/load-back-header.js"></script>
+  <script defer src="/scripts/load-back-header.js" type="module"></script>
+  <script defer src="/scripts/load-utterances.js" type="module"></script>
 </body>
 </html>
