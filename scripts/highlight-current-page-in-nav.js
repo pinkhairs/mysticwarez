@@ -7,8 +7,8 @@ if (pathname === '/' || pathname === '/index.html' || pathname === '') {
   value = 'community';
 } else if (pathname.includes('courses')) {
   value = 'courses';
-} else if (pathname.includes('newsletter')) {
-  value = 'newsletter';
+} else if (pathname.includes('about')) {
+  value = 'about';
 }
 
 if (value) {

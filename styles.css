@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -24,6 +29,11 @@ body::after {
   background: linear-gradient(0deg, Orchid 50%, CornflowerBlue 100%);
   z-index: -1;
   opacity: 0.2;
+}
+
+button {
+  border: 0;
+  background: none;
 }
 
 .logo {
@@ -109,7 +119,7 @@ svg {
   }
 }
 
-.current-page-newsletter .newsletter-link {
+.current-page-about .about-link {
   background: darkorchid;
   border-radius: 100px;
   a {
@@ -210,7 +220,6 @@ article:not(:last-child) {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
   align-self: start;
 }
 
@@ -238,6 +247,23 @@ input[type="email"] {
 
 .post-content ul {
   padding-left: 16px;
+}
+
+
+
+#table-of-contents {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  a {
+    color: black;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 768px) {
@@ -279,9 +305,18 @@ input[type="email"] {
   .newsletter-subscribe {
     flex-direction: column;
   }
+  .back-header {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 @media (min-width: 768px) {
+  #table-of-contents ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+  }
   .page {
     display: flex;
     width: 960px;
@@ -328,6 +363,10 @@ input[type="email"] {
   }
 
   .back-button {
+    color: white;
+  }
+
+  #table-of-contents a {
     color: white;
   }
 }

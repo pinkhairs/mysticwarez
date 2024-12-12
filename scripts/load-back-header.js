@@ -1,3 +1,5 @@
+import tableOfContents from './course-table-of-contents.js';
+
 function loadBackHeader() {
   // load site header
   var header = document.querySelector('.site-header');
@@ -5,7 +7,7 @@ function loadBackHeader() {
   xhr.open('GET', '/includes/back-header.html', true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      header.outerHTML = xhr.responseText;
+      header.insertAdjacentHTML('beforeend', xhr.responseText);
       loadBackLogo();
     }
   }
@@ -20,6 +22,7 @@ function loadBackLogo() {
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       logo.outerHTML = xhr.responseText;
+      tableOfContents();
     }
   }
   xhr.send();
@@ -27,7 +30,4 @@ function loadBackLogo() {
 
 document.addEventListener('DOMContentLoaded', function() {
   loadBackHeader();
-  document.getElementById('back-button').addEventListener('click', function() {
-    window.history.back();
-  });
 })
