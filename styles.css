@@ -238,7 +238,6 @@ input[type="email"] {
   padding-left: 16px;
 }
 
-
 @media (max-width: 768px) {
   .site-header {
     display: flex;
@@ -253,7 +252,7 @@ input[type="email"] {
     left: -250px;
     top: 0;
     transition: left 0.3s;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     padding: 20px 32px 20px;
     box-shadow: 6px 0 6px -1px rgba(0, 0, 0, 0.08);
@@ -322,7 +321,7 @@ input[type="email"] {
   .popup-content {
     background: black;
   }
-  #hambuger-menu {
+  #hamburger-menu {
     color: white;
   }
 
