@@ -42,6 +42,7 @@ body::after {
   border: 0;
   line-height: 1;
   display: none;
+  color: black;
 }
 
 .page-header {
@@ -87,7 +88,7 @@ svg {
 }
 
 .current-page-community .community-link {
-  background: black;
+  background: darkorchid;
   border-radius: 100px;
   a {
     color: white;
@@ -98,7 +99,7 @@ svg {
 }
 
 .current-page-courses .courses-link {
-  background: black;
+  background: darkorchid;
   border-radius: 100px;
   a {
     color: white;
@@ -109,7 +110,7 @@ svg {
 }
 
 .current-page-newsletter .newsletter-link {
-  background: black;
+  background: darkorchid;
   border-radius: 100px;
   a {
     color: white;
@@ -162,65 +163,6 @@ h2 {
   transition: opacity 0.3s;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
-
-.backdrop::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: DarkOrchid;
-  opacity: .5;
-}
-
-.popup-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-  width: 66%;
-}
-
-@media (prefers-color-scheme: dark) {
-  body::after {
-    background: linear-gradient(180deg, MidnightBlue 0%, Indigo 100%);
-    opacity: 1;
-  }
-  body {
-    color: white;
-  }
-  
-  svg {
-    fill: white;
-  }
-
-  .site-link a {
-    color: white;
-  }
-
-  .post-card {
-    background: rgba(0, 0, 0, 0.35);
-  }
-
-  .popup-content {
-    background: black;
-  }
-}
-
 .avatar {
   width: 40px;
   height: 40px;
@@ -255,6 +197,48 @@ article:not(:last-child) {
   margin-bottom: 24px;
 }
 
+.back-button {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  opacity: .75;
+}
+
+#back-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-self: start;
+}
+
+.lesson-number {
+  opacity: .6;
+}
+
+input[type="email"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.15);
+}
+
+.newsletter-subscribe {
+  display: flex;
+  gap: 12px;
+  .button {
+    flex-shrink: 0;
+  }
+}
+
+.post-content ul {
+  padding-left: 16px;
+}
+
+
 @media (max-width: 768px) {
   .site-header {
     display: flex;
@@ -275,6 +259,12 @@ article:not(:last-child) {
     box-shadow: 6px 0 6px -1px rgba(0, 0, 0, 0.08);
     margin-top: 0;
   }
+  .site-link a {
+    color: white;
+  }
+  .site-link svg {
+    fill: white;
+  }
   .site-navigation.active {
     left: 0;
   }
@@ -284,6 +274,9 @@ article:not(:last-child) {
 
   .popup-content {
     width: 90%;
+  }
+  .newsletter-subscribe {
+    flex-direction: column;
   }
 }
 
@@ -304,21 +297,36 @@ article:not(:last-child) {
   }
 }
 
-.back-button {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  opacity: .75;
-}
 
-#back-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-  align-self: start;
-}
+@media (prefers-color-scheme: dark) {
+  body::after {
+    background: linear-gradient(180deg, MidnightBlue 0%, Indigo 100%);
+    opacity: 1;
+  }
+  body {
+    color: white;
+  }
+  
+  svg {
+    fill: white;
+  }
 
-.lesson-number {
-  opacity: .6;
+  .site-link a {
+    color: white;
+  }
+
+  .post-card {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  .popup-content {
+    background: black;
+  }
+  #hambuger-menu {
+    color: white;
+  }
+
+  .back-button {
+    color: white;
+  }
 }
