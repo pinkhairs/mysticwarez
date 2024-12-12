@@ -131,7 +131,8 @@ svg {
   text-decoration: none;
   border: 0;
   cursor: pointer;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .join-button {
   flex-shrink: 0;
