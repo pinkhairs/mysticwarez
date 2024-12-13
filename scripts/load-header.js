@@ -8,7 +8,7 @@ function loadHeader() {
       header.outerHTML = xhr.responseText;
       loadLogo();
       loadCommunityIcon();
-      loadCoursesIcon();
+      loadTutorialsIcon();
       loadNewsletterIcon();
       loadScript('/scripts/mobile-menu.js');
       loadScript('/scripts/highlight-current-page-in-nav.js');
@@ -43,14 +43,14 @@ function loadCommunityIcon() {
   xhr.send();
 }
 
-function loadCoursesIcon() {
-  // load courses-icon
-  var coursesIcon = document.querySelector('.courses-icon');
+function loadTutorialsIcon() {
+  // load tutorials-icon
+  var tutorialsIcon = document.querySelector('.tutorials-icon');
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', '/images/courses-icon.svg', true);
+  xhr.open('GET', '/images/tutorials-icon.svg', true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      coursesIcon.innerHTML = xhr.responseText;
+      tutorialsIcon.innerHTML = xhr.responseText;
     }
   }
   xhr.send();

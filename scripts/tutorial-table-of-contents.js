@@ -1,7 +1,7 @@
 const tableOfContents = () => {
   const headers = document.querySelectorAll('h2');
   const toc = document.querySelector('#table-of-contents');
-  if (toc && window.location.pathname.includes('/courses/')) {
+  if (toc && window.location.pathname.includes('/tutorials/')) {
       toc.insertAdjacentHTML('afterbegin', '<h3>Table of Contents</h3>');
       const ul = document.createElement('ul');
 

@@ -1,4 +1,4 @@
-import tableOfContents from './course-table-of-contents.js';
+import tableOfContents from './tutorial-table-of-contents.js';
 
 function loadBackHeader() {
   // load site header

@@ -1,11 +1,11 @@
 import loadList from '/scripts/load-list.js';
 
-const courses = [
-  // pinned courses
+const tutorials = [
+  // pinned tutorials
   'how-to-join-mysticwarez',
 
-  // all other courses
+  // all other tutorials
 ];
 document.addEventListener('DOMContentLoaded', () => {
-  loadList(courses, '/courses', '#courses');
+  loadList(tutorials, '/tutorials', '#tutorials');
 });
