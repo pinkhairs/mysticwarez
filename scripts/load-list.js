@@ -1,10 +1,10 @@
-async function loadList(folders, basePath, coursesContainerId) {
-  const coursesContainer = document.getElementById(coursesContainerId.slice(1)); // Remove the '#' for ID selection
+async function loadList(folders, basePath, tutorialsContainerId) {
+  const tutorialsContainer = document.getElementById(tutorialsContainerId.slice(1)); // Remove the '#' for ID selection
   const paginationContainer = document.getElementById('pagination'); // Remove the '#' for ID selection
 
   let currentPage = getCurrentPageFromURL();
   
-  async function displayCourses(page) {
+  async function displayTutorials(page) {
       const pageOffset = (page - 1) * 10; // items per page set statically as 10
       const foldersToLoad = folders.slice(pageOffset, pageOffset + 10);
 
@@ -15,10 +15,10 @@ async function loadList(folders, basePath, coursesContainerId) {
               const response = await fetch(url);
               html += await response.text();
           } catch (error) {
-              console.error('Failed to load course content:', error);
+              console.error('Failed to load tutorial content:', error);
           }
       }
-      coursesContainer.innerHTML = html;
+      tutorialsContainer.innerHTML = html;
       updatePagination(page, folders.length);
   }
 
@@ -46,7 +46,7 @@ async function loadList(folders, basePath, coursesContainerId) {
       link.addEventListener('click', function(event) {
           event.preventDefault();
           window.history.pushState({}, '', `${window.location.pathname}?page=${page}`);
-          displayCourses(page);
+          displayTutorials(page);
       });
       return link;
   }
@@ -59,7 +59,7 @@ async function loadList(folders, basePath, coursesContainerId) {
       return params.get('page') ? parseInt(params.get('page'), 10) : 1;
   }
 
-  displayCourses(currentPage);
+  displayTutorials(currentPage);
 }
 
 export default loadList;
