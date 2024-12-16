@@ -7,10 +7,6 @@ setInterval(function() {
     updateVisitorCount();
 }, 22222);
 
-window.addEventListener('beforeunload', function() {
-  navigator.sendBeacon('https://server.mysticwarez.com/live-visitors.php', new URLSearchParams({action: 'end'}));
-});
-
 function updateVisitorCount() {
   fetch('https://server.mysticwarez.com/live-visitors.php', {
       method: 'POST',
