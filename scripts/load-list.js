@@ -10,7 +10,7 @@ async function loadList(folders, basePath, tutorialsContainerId) {
 
       let html = '';
       for (const folder of foldersToLoad) {
-          const url = `${basePath}/${folder}/preview.html`;
+          const url = `${basePath}/${folder}/post.html`;
           try {
               const response = await fetch(url);
               html += await response.text();

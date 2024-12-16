@@ -13,7 +13,7 @@ const tableOfContents = () => {
           a.addEventListener('click', (event) => {
               event.preventDefault(); // Prevent the default anchor click behavior
               // Scroll to the header element smoothly
-              header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              header.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
           li.appendChild(a);
           ul.appendChild(li);

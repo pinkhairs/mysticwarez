@@ -197,10 +197,11 @@ h2 {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  line-height: 1.5;
+  line-height: 1.65;
   a:not(.button) {
     font-weight: 700;
     color: darkorchid;
+    text-decoration: underline;
   }
 }
 
@@ -249,7 +250,7 @@ input[type="email"] {
   }
 }
 
-.post-content ul {
+.post-content ul, .post-content ol {
   padding-left: 16px;
 }
 
@@ -308,6 +309,22 @@ input[type="email"] {
   align-items: center;
   font-size: 15px;
   z-index: 999;
+}
+
+.callout {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+code {
+  color: darkorchid;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {

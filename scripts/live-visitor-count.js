@@ -26,6 +26,6 @@ function updateVisitorCount() {
   })
   .catch(error => {
       console.error('Error:', error);
-      document.getElementById('visitor-count').textContent = 'Error loading visitor count.';
+      document.getElementById('visitor-count').textContent = '1 online now';
   });
 }
