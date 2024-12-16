@@ -198,6 +198,7 @@ h2 {
   gap: 16px;
   flex-direction: column;
   line-height: 1.65;
+  word-wrap: break-word;
   a:not(.button) {
     font-weight: 700;
     color: darkorchid;
@@ -290,7 +291,8 @@ input[type="email"] {
   margin-bottom: 16px;
   ul {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
     margin-top: 16px;
   }
@@ -380,11 +382,6 @@ code {
 }
 
 @media (min-width: 768px) {
-  #table-of-contents ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-  }
   .page {
     display: flex;
     width: 960px;
