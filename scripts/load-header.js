@@ -12,6 +12,7 @@ function loadHeader() {
       loadNewsletterIcon();
       loadScript('/scripts/mobile-menu.js');
       loadScript('/scripts/highlight-current-page-in-nav.js');
+      loadScript('/scripts/live-visitor-count.js');
     }
   }
   xhr.send();
