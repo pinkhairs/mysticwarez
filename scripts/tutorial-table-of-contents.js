@@ -6,13 +6,15 @@ const tableOfContents = () => {
       const ul = document.createElement('ul');
 
       headers.forEach(header => {
-          const slug = header.innerText.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '');
-          header.id = slug;
-
           const li = document.createElement('li');
           const a = document.createElement('a');
-          a.href = `#${slug}`;
+          a.href = 'javascript:void(0);'; // Prevent the default link behavior
           a.innerText = header.innerText;
+          a.addEventListener('click', (event) => {
+              event.preventDefault(); // Prevent the default anchor click behavior
+              // Scroll to the header element smoothly
+              header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
           li.appendChild(a);
           ul.appendChild(li);
       });
