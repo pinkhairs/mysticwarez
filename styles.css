@@ -199,6 +199,7 @@ h2 {
   flex-direction: column;
   line-height: 1.5;
   a:not(.button) {
+    font-weight: 700;
     color: darkorchid;
   }
 }
