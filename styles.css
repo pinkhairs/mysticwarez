@@ -424,7 +424,7 @@ input[type="email"] {
 
 @media (prefers-color-scheme: dark) and (max-width: 768px) {
   .live-visitors {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.08);
     padding: 8px 16px;
     border-radius: 16px;
