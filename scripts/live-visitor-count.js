@@ -1,5 +1,7 @@
 updateVisitorCount();
 
+setInterval(updateVisitorCount, 8888);
+
 function updateVisitorCount() {
   fetch('https://server.mysticwarez.com/live-visitors.php', {
       method: 'POST',
