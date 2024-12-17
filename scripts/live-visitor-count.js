@@ -1,11 +1,4 @@
-const timestamp = Date.now();
-
 updateVisitorCount();
-
-// Regularly fetch the visitor count every 15 seconds to keep the display updated
-setInterval(function() {
-    updateVisitorCount();
-}, 88888);
 
 function updateVisitorCount() {
   fetch('https://server.mysticwarez.com/live-visitors.php', {
