@@ -9,9 +9,9 @@
 <body>
   <div class="page">
     <header class="site-header back-header">
-      <a onclick="history.back(); return false;" id="back-link" href="/tutorials">
+      <button type="button" onclick="if (document.referrer.includes(window.location.host)) { history.back(); } else { window.location.href = '/'; } return false;" id="back-link">
         <span class="back-button">&#x25c0;</span> <div class="logo"></div>
-      </a>
+      </button>
     </header>
     <main class="site-main">
       <h1 class="page-header">How to post to Mysticwarez</h1>
