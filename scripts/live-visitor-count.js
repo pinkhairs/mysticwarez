@@ -5,7 +5,7 @@ updateVisitorCount();
 // Regularly fetch the visitor count every 15 seconds to keep the display updated
 setInterval(function() {
     updateVisitorCount();
-}, 22222);
+}, 88888);
 
 function updateVisitorCount() {
   fetch('https://server.mysticwarez.com/live-visitors.php', {
@@ -13,8 +13,7 @@ function updateVisitorCount() {
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: 'action=start', // This sends a POST request to start the session
-      credentials: 'include'
+      credentials: 'include',
   })
   .then(response => response.json())
   .then(data => {
