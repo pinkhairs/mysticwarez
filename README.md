@@ -67,7 +67,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## 👥 Join the Community
 
-- 🌟 Discord: [Join our server](https://discord.gg/YJSd4eFuRN)  
+- 🌟 Discord: [Join our server](https://discord.gg/zqrK5ZDxZF)  
 - 🎥 TikTok: [Follow us](https://tiktok.com/@mysticwarez)
 
 ---

@@ -40,7 +40,7 @@ You can use these same steps to contribute **anything**, from ideas and features
    We encourage open questions! Post about what you’re working on or ask for support directly in the community.  
 
 - **Join the Discord**  
-   If you need extra help, reach out to us on our **[Discord server](https://discord.gg/YJSd4eFuRN)** for real-time assistance.  
+   If you need extra help, reach out to us on our **[Discord server](https://discord.gg/zqrK5ZDxZF)** for real-time assistance.  
 
 ---
 
