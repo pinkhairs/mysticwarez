@@ -4,6 +4,8 @@ if (window.location.hostname !== '127.0.0.1') {
   document.getElementById('visitor-count').textContent = '1 online now';
 }
 
+setInterval(updateVisitorCount, 8888);
+
 function updateVisitorCount() {
   fetch('https://server.mysticwarez.com/live-visitors.php', {
       method: 'POST',
