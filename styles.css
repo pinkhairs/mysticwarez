@@ -233,7 +233,7 @@ article:not(:last-child) {
   opacity: .6;
 }
 
-input[type="email"] {
+input[type="email"], input[type="text"] {
   padding: 8px 12px;
   border-radius: 8px;
   border: 0;
@@ -327,6 +327,27 @@ input[type="email"] {
 code {
   color: darkorchid;
   font-weight: 700;
+}
+
+#discord-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#discord-icon:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.75);
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 8px;
 }
 
 @media (max-width: 768px) {

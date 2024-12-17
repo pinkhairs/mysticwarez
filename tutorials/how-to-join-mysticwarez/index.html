@@ -26,40 +26,23 @@
           <p><strong>You don't need prior coding experience.</strong> We'll walk you through everything.</p>
           <h3>Steps:</h3>
           <ol>
-            <li>Download Mysticwarez' code (with Github)</li>
-            <li>Create your post (with HTML and Visual Studio Code)</li>
-            <li>Upload it to the site (with Github again)</li>
+            <li>Download this website's code</li>
+            <li>Create your post on the website (with HTML and Visual Studio Code)</li>
+            <li>Upload the updated site code at the end of this page</li>
           </ol>
-          <p>This tutorial will guide you through each step. Posting should take about 30 or 45 minutes, depending on your speed. Taking breaks is OK.</p>
+          <p>This tutorial will guide you through each step. Posting should take about 20 or 40 minutes, depending on your speed. Taking breaks is OK.</p>
           <p>If you get stuck, don't tear your hair out—ask for a helping hand on <a href="https://discord.gg/zqrK5ZDxZF" target="_blank">the Discord</a> or <a href="#replies">leave a reply</a> on this page. We're very friendly!</p>
           <p>Our philosophy is to learn as we go. So, let's get started.</p>
         </div>
       </article>
       <article class="post-card">
         <div class="post-content">
-          <h2><span class="lesson-number">02.</span> Download Mysticwarez' code</h2>
-          <p>Fantastic, you're ready! We'll start by downloading the code you need from our "GitHub repository."</p>
-          <div class="callout">
-            <h3>💡 Github repository?</h3>
-            <p>Github is a site to store code. It handles keeping your code in the cloud (in case anything happens to your computer).</p>
-            <p>A repository — or "repo" for short — is the folder for a project.</p>
-          </div>
-          <p>The easiest way to do this is with Github Desktop. Visit the Github Desktop site by clicking the button below, and pick the download for your computer. (Windows, Mac, or Linux.)</p>
-          <p><a href="https://desktop.github.com/download/" target="_blank" class="button">Visit Github Desktop</a></p>
-          <p>Set up the application on your computer. Then, open it. Find the link that says <strong>Create Your Free Account</strong>. Click it, and follow the instructions to finish setting up Github. Be sure to set a name and email to identify yourself amongst the community.</p>
-          <p><img src="/tutorials/how-to-join-mysticwarez/images/github-configure.png" class="cover-image"></p>
-          <p>On the next screen, it'll say <strong>Let's get started!</strong></p>
-          <p>On the right-hand side, click the button that says 📄 Clone a Repository from the Internet.</p>
-          <p>Click the last tab that says URL, and enter this Github username and repository name: <code>pinkhairs/mysticwarez</code> (Logically, pinkhairs is <a href="/posts/welcome" target="_blank">Diana's</a> username. mysticwarez is the repo name.)</p>
-          <p><em>Take note of where the "local path" (the project folder on your computer) is! We recommend putting this project in a folder on your desktop.</em></p>
-          <p><img src="/tutorials/how-to-join-mysticwarez/images/github-clone.png" class="cover-image"></p>
-          <p>Click the <strong>Clone</strong> button. This will download a copy of the whole Mysticwarez website onto your computer! This way you can preview exactly how your introduction post will look.</p>
-          <div class="callout">
-            <h3>📂 What's a clone?</h3>
-            <p>It's a completely separate copy of the "live" website on mysticwarez.com, to do anything you want with. Changes made to this code won't affect other users, so don't worry, experiment to your heart's content.</p>
-            <p>However, this project is still <em>tied</em> to the Github repo. Once you're ready, you can request to upload your post to the live website seamlessly with the Github desktopo app.</p>
-            <p>Note there is a review process before your code is actually published, just to prevent bad apples from affecting the site.</p>
-          </div>
+          <h2><span class="lesson-number">02.</span> Download the code</h2>
+          <p>Fantastic, you're ready! We'll start by downloading the code you need from our code host.</p>
+          <p>The easiest way to do this is simply clicking the button below. It's a direct link to the latest version of our website code on Github, a popular code host.</p>
+          <p><a href="https://github.com/pinkhairs/mysticwarez/archive/refs/heads/main.zip" target="_blank" class="button">Download Mysticwarez</a></p>
+          <p>If you prefer to do it manually, you can head to <a href="https://github.com/pinkhairs/mysticwarez" target="_blank">our Github page</a> and click the big green "Code" button. Then click "Download ZIP" at the bottom of that dropdown.</p>
+          <p>Unzip the folder on your Desktop or Documents folder, whichever you prefer.</p>
           <p>Hooray, you made it through! Let's now dive into creating your introduction post with HTML and Visual Studio Code.</p>
         </div>
       </article>
@@ -70,10 +53,18 @@
           <h3>Meet Visual Studio Code</h3>
           <p>Download Visual Studio Code by heading to <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>. This powerful editor allows you to work directly from your browser. It works slightly differently from Microsoft Word or Google Docs. Because it's meant for code, it won't autoformat anything, keeping your code just as you intend it to be.</p>
           <p>Finish the installation process for VS Code, and open the folder on your computer where you've stored the cloned Mysticwarez repository. If it asks you if you trust the author, say yes, as it's your own desktop.</p>
+          <p>Also, I recommend hiding all the gizmos and widgets on Visual Studio Code that you won't be using yet, just to keep a distraction-free environment.</p>
+          <p>Right-click every icon or label that you see, and un-checkmark it. Except for the most top-left button named Explorer.</p>
+          <p>Here's a handy GIF guide.</p>
+          <video controls autoplay loop class="cover-image">
+            <source src="/tutorials/how-to-join-mysticwarez/images/vscode.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <h3>Fire up the site</h3>
-          <p>Let's install an extension to give this code folder a URL of sorts on your computer. There are a few buttons on the left-hand side. If you hover over them, they'll tell you what they contain. Hover over each one until you find the one with blocks that's called <strong>Extensions</strong>. Click on it and search for "Live Preview" by Microsoft. Click the <strong>Install</strong> button and refresh, if it prompts you to.</p>
-          <p>Navigate back to the first tab on the left hand side called <strong>Explorer</strong>. If there are open folders, collapse them (by clicking the triangle on the left-hand side) to get a clearer view.</p>
-          <p>Find the index.html that's almost last in the list of files. This means it's not in any folder inside the project folder—it's at the "root" directory. Right-click that index.html and select Show Preview from the list.</p>
+          <p>Let's install an extension to give this code folder a URL of sorts on your computer. Right-click the Explorer button in the top-left and check the <strong>Extensions</strong> tab back. Click on it and search for "Live Preview" by Microsoft. Click the <strong>Install</strong> button and refresh, if the button changes to prompt you to.</p>
+          <p>Hide the Extensions tab again by right-clicking it and un-checkmarking it.</p>
+          <p>Navigate back to the <strong>Explorer</strong>. If there are open folders, collapse them (by clicking the triangle on the left-hand side) to get a clearer view.</p>
+          <p>Find the index.html that's almost last in the list of files. This means it's not in any folder inside the project folder—it's at the "root" folder. Right-click that index.html and select Show Preview from the list.</p>
           <p>You'll notice a new panel opened up, with a mini-browser and the URL <code>http://127.0.0.1:3000/index.html</code></p>
           <p>127.0.0.1 is your computer's name for itself. It's "home." 3000 is a port number—it's like a room that your computer is reserving for your website.</p>
           <p><img src="/tutorials/how-to-join-mysticwarez/images/home.jpg" class="cover-image"></p>
@@ -85,7 +76,7 @@
           <p>Clear out existing images by navigating into the images folder inside your new welcome-<code>your-username-here</code> folder and deleting the images there. This will ensure you start with a clean slate for your own images.</p>
           <h3>Craft the preview of your intro post</h3>
           <p>Open the <code>post.html</code> file in your new welcome-<code>your-username-here</code> folder. This is where you'll write a short version of your introduction post for the homepage list of posts.</p>
-          <p>Let's be fearless, and take a close look at this code.</p>
+          <p>Let's be fearless, and take a close look at this code, line by line.</p>
           <ol>
             <li>&#x3C;article class=&#x22;post-card&#x22;&#x3E;</li>
             <li>&nbsp;&nbsp;&#x3C;div class=&#x22;post-content&#x22;&#x3E;</li>
@@ -123,13 +114,12 @@
       </article>
       <article class="post-card">
         <div class="post-content">
-          <h2><span class="lesson-number">04.</span> List your intro post</h2>
+          <h2><span class="lesson-number">04.</span> List your new post</h2>
           <p>Now that you've crafted your introduction post, it's time to add it to the list of posts on the homepage.</p>
-          <p>Press CTRL + P on Windows or CMD + P on Mac. This shortcut opens a quick file search within your project, making it easy to jump to different files without navigating through folders. Type "community" and find the file called "list-community-posts.js" inside the scripts folder. Click on it.</p>
-          <p><img src="/tutorials/how-to-join-mysticwarez/images/cmd-p.png" class="cover-image"></p>
+          <p>Find the file called "load-community-posts.js" inside the <strong>scripts</strong> folder. Click on it.</p>
           <div class="callout">
-            <h3>💭 Understanding list-community-posts.js</h3>
-            <p>This JavaScript file is what we call a "blackbox" — it works in the background to handle listing posts on the homepage. For now, you don't need to worry about how it works internally. Think of it like you think of a washing machine. It just works, even if you don't know the underlying technology</p>
+            <h3>💭 Understanding load-community-posts.js</h3>
+            <p>This JavaScript file is what we call a "blackbox" — it works in the background to handle listing posts on the homepage. For now, you don't need to worry about how it works internally. Think of it like you think of a washing machine. It just works, even if you don't know the underlying technology.</p>
           </div>
           <p>All we're gonna do is add your new welcome-<code>your-username-here</code> folder to the top of the list.</p>
           <p>Find the line that says <code>const posts = [</code> and add a new line right below it. Inside the square brackets, add the following line:</p>
@@ -141,38 +131,32 @@
       <article class="post-card">
         <div class="post-content">
           <h2><span class="lesson-number">05.</span> Publish your post</h2>
-          <p><strong>Congratulations, you've accomplished so much!</strong> Now that you've created your introduction post, it's time to publish it to the live site. This way, everyone can see your beautiful work!</p
-          <p>Open Github Desktop. You should see the changes you've made to the code. They'll be listed on the left-hand side. You can see the files you've changed, and the new files you've added.</p>
-          <p>See the top bar, where the first two blocks says, from left to right, Repository and Current Branch?</p>
-          <p>We're going to create your own branch to make propose changes to the site from. This will keep everything neat and tidy. Think of yourself as a bird on a branch, and the others have their own branch. It's good to have a boundary.</p>
-          <p>Click on the Current Branch block.</p>
-          <p>Click the "New Branch" button.</p>
-          <p>Name your branch <code>welcome-your-username-here</code>.</p>
-          <p>When it asks what you want to do with your changed files, click the second option—<strong>Bring my changes to <code>welcome-your-username-here</code></strong>.</p>
-          <div class="callout">
-            <h3>🌿 Branching out</h3>
-            <p>This step can pass by quickly. If you make a mistake, feel free to ask for a helping hand on <a href="https://discord.gg/zqrK5ZDxZF" target="_blank">the Discord</a> or <a href="#replies">leave a reply</a> on this page.</p>
-          </div>
-          <p>Now that you've changed your current branch (you should see a new name on the "Current Branch" block) it's time to <strong>commit</strong> changes, and then <strong>push</strong> them.</p>
-          <div class="callout">
-            <h3>🔒 Committing vs. pushing</h3>
-            <p>Committing is like saving your work. It's a way to say, "I'm done with this part of the project." Pushing is like sending your work to the cloud, so others can see it.</p>
-          </div>
-          <p>Write a summary of your changes, like "add my intro post" in the single-line textarea at the bottom left of the screen. You can ignore the description for now.</p>
-          <p>Your changes will seem to disappear—but they're saved on your computer. Now it's time to upload them to the cloud.</p>
-          <p>Push the big "Publish Branch" button.</p>
-          <p>Awesome.</p>
-          <p>Now, click the "Preview Pull Request" button.</p>
-          <div class="callout">
-            <h3>🔍 Pull Request</h3>
-            <p>Think of a pull request like a request to the site owner to publish your changes into the live site. It's a way to say, "Hey, I've made some changes. Can you take a look?" This is the step where we'll give feedback on your code and make sure it's as amazing as it can be.</p>
-          </div>
-          <p>Inside the popup that comes up, click the "Create Pull Request" button. It should open Github.com, on a page called Open Pull Request.</p>
-          <p>Write anything you want to note during your code review, like things you're especially proud of, or anything you're unsure on.</p>
-          <p><img src="/tutorials/how-to-join-mysticwarez/images/pr.png" class="cover-image"></p>
-          <p>Scroll down to the "Create Pull Request" button.</p>
-          <p>Wonderful! 😄 Now, you'll get an email with personalized code feedback. And when everything's clear, your intro will be published within an hour or so!</p>
-          <p><strong>Congratulations! 🎉</strong> Thank you for being a part of Mysticwarez. We can't wait to see what you create next. (Maybe not today — you've already accomplished a lot today!)</p>
+          <p><strong>Awesome, you've accomplished so much!</strong> Now that you've created your introduction post, it's time to publish it to the live site. This way, everyone can see your beautiful work!</p>
+          <p>Zip up the complete <strong>mysticwarez</strong> project code with your new post included, by right-clicking the folder on your Desktop or Documents folder and selecting Create Archive. (It may be called something else on your computer.)</p>
+          <p>Upload the zip using the form below.</p>
+      </div>
+      </article>
+      <article class="post-card">
+        <form action="https://server.mysticwarez.com/upload-intro.php" method="post" enctype="multipart/form-data" class="post-content" onsubmit="event.preventDefault(); fetch(this.action, {method: 'POST', body: new FormData(this)}).then(() => this.parentElement.style.display='none');">
+          <h3>Upload your code</h3>
+          <label for="name">Your Name
+            <input type="text" id="name" name="name" required>
+          </label>
+          <label for="email">Your Email
+            <input type="email" id="email" name="email" required>
+          </label>
+          <label for="zip-file" class="upload-here">Upload your zip file<br />
+            <input type="file" id="zip-file" name="zip-file" accept=".zip">
+          </label>
+          <button type="submit" class="button">Submit Code</button>
+        </form>
+      </article>
+      <article class="post-card">
+        <div class="post-content">
+          <p>Wonderful! 😄 If the form disappeared, you did it!</p>
+          <p>You'll also receive an email confirmation.</p>
+          <p>Soon, you'll get an email with personalized code feedback. And when everything's clear, your intro will be published within an hour or so!</p>
+          <p><strong>Congratulations! 🎉</strong> Thank you for being a part of Mysticwarez. We can't wait to see what you create next. (Another day is OK — you've already accomplished a lot today!)</p>
           <p><a href="/tutorials" class="button">Browse Tutorials</a></p>
         </div>
       </article>
@@ -185,6 +169,9 @@
       <div id="utterances-container"></div>
     </main>
   </div>
+  <a href="https://discord.com/invite/zqrK5ZDxZF" target="_blank" id="discord-icon">
+    <img src="/images/discord.png" alt="Join our Discord"/>
+  </a>
   <script defer src="/scripts/load-utterances.js" type="module"></script>
   <script defer src="/scripts/load-back-header.js" type="module"></script>
 </body>
