@@ -18,6 +18,8 @@ async function loadPostContent() {
       // Replace the outerHTML of the post content element with the fetched HTML
       if (postContentElement) {
           postContentElement.outerHTML = html;
+          const title = document.querySelector('h2').textContent;
+          document.title = 'Mysticwarez - ' + title;
       } else {
           console.error('The element #post-content was not found on the page.');
       }
