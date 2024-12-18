@@ -1,6 +1,7 @@
 import loadList from '/scripts/load-list.js';
 
 const posts = [
+  'free-domain-name',
   'welcome',
 ];
 
