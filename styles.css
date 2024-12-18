@@ -186,6 +186,8 @@ h2 {
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
+  margin-top: 12px;
+  line-height: 1.2;
 }
 
 .timestamp {
