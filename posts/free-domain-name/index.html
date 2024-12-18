@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mysticwarez - Welcome to the digital coven for tech witches</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header back-header">
+      <a onclick="history.back(); return false;" id="back-link" href="/">
+        <span class="back-button">&#x25c0;</span> <div class="logo"></div>
+      </a>
+    </header>
+    <main class="site-main">
+      <article id="post-content"></article>
+      <article>
+        <div class="post-content">
+          <h2 id="replies">Replies</h2>
+          <p>We use Github, our code host, for replies! <a href="https://github.com/">Sign up for Github</a> (it's free) and leave a reply to the original poster.</p>
+        </div>
+      </article>
+      <div id="utterances-container"></div>
+    </main>
+  </div>
+  <script defer src="/scripts/load-individual-post.js" type="module"></script>
+  <script defer src="/scripts/load-back-header.js" type="module"></script>
+  <script defer src="/scripts/load-utterances.js" type="module"></script>
+</body>
+</html>
