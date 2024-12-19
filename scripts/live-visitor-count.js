@@ -17,8 +17,8 @@ function updateVisitorCount() {
     }
   })
   .catch(error => {
+    console.error('Error:', error);
     if (document.getElementById('visitor-count')) {
-      console.error('Error:', error);
       document.getElementById('visitor-count').textContent = '1 online now';
     }
   });
