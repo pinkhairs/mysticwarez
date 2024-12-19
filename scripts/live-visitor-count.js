@@ -12,10 +12,14 @@ function updateVisitorCount() {
   })
   .then(response => response.json())
   .then(data => {
+    if (document.getElementById('visitor-count')) {
       document.getElementById('visitor-count').textContent = data.activeVisitors + ' online now';
+    }
   })
   .catch(error => {
+    if (document.getElementById('visitor-count')) {
       console.error('Error:', error);
       document.getElementById('visitor-count').textContent = '1 online now';
+    }
   });
 }

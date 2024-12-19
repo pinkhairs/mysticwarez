@@ -7,7 +7,6 @@ const posts = [
 
 document.addEventListener('DOMContentLoaded', () => {
   loadList(posts, '/posts', '#posts');
-  loadScript('/scripts/load-post-permalink.js');
 });
 
 function loadScript(src) {
